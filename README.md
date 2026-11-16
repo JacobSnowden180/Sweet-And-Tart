@@ -1,6 +1,8 @@
 # Sweet and Tart
 
-Photo portfolio for **Sweet and Tart**, Milene’s custom pastry business. It is a static site: HTML, CSS, and a small vanilla script. There is no build step, so the repository root is the site.
+Photo portfolio for **Sweet and Tart**, our team’s custom pastry business. It is a static site: HTML, CSS, and a small vanilla script. There is no build step, so the repository root is the site.
+
+The email (`hello@example.com`) and phone (`(555) 010-0100`) on the site are placeholders until the owner is ready to publish real contact details.
 
 ## Preview locally
 
@@ -16,7 +18,7 @@ Open [http://localhost:8080](http://localhost:8080). Use a phone-width window as
 
 - `index.html` — home, with a short about, signature items, a few photos, and a link to order
 - `gallery.html` — all 10 photos in one masonry grid, with a lightbox
-- `order.html` — how custom orders work, and buttons for email, phone, text, and Instagram
+- `order.html` — how custom orders work, and buttons for email, phone, and text
 - `404.html` — missing-page fallback for Cloudflare Pages and GitHub Pages
 
 The header, navigation, and footer are copied into each HTML file. If you change one, update the others (search for `Shared header` and `Shared footer`).
@@ -58,6 +60,8 @@ Colors are CSS variables at the top of `css/styles.css`. The page background is 
 Pull requests get their own preview URL. A custom domain is a later step: **Pages project → Custom domains**. When that domain is live, set `og:url` and `og:image` in each page `<head>` to absolute `https://` URLs (they are root-relative today).
 
 GitHub Pages also works with no build, serving the repository root. `.nojekyll` is included so Jekyll does not drop `_headers`.
+
+Workers Builds preview checks run `npx wrangler preview`. `wrangler.jsonc` serves the repository root as static assets and uses `404.html` for missing pages. There is still no build step.
 
 ## Later
 

@@ -61,6 +61,8 @@ Pull requests get their own preview URL. A custom domain is a later step: **Page
 
 GitHub Pages also works with no build, serving the repository root. `.nojekyll` is included so Jekyll does not drop `_headers`.
 
+Workers Builds preview checks run `npx wrangler preview`. `wrangler.jsonc` serves the repository root as static assets and uses `404.html` for missing pages. There is still no build step.
+
 ## Later
 
 - FAQ, lead time, and allergy info

@@ -1,0 +1,7 @@
+{
+  "name": "sweet-and-tart",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "4.163.0"
+  }
+}
